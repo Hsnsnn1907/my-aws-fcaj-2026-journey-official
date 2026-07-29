@@ -5,11 +5,6 @@ weight = 1
 chapter = false
 +++
 
-{{% notice warning %}}
-**Warning**
-
-Note: The information below is for reference purposes only. Please do not copy verbatim for your report, including this warning.
-{{% /notice %}}
 
 On this page, you will need to introduce your worklog. How did you complete it? How many weeks did you take to complete the program? What did you do in those weeks?
 

@@ -5,11 +5,6 @@ weight = 1
 chapter = false
 +++
 
-{{% notice warning %}}
-**Cảnh báo**
-
-Lưu ý: Thông tin dưới đây chỉ mang tính chất tham khảo. Vui lòng không sao chép y chang cho báo cáo của bạn, bao gồm cả cảnh báo này.
-{{% /notice %}}
 
 Trang này giới thiệu về nhật ký làm việc (worklog) của bạn. Bạn đã hoàn thành nó như thế nào? Chương trình thực tập kéo dài bao nhiêu tuần? Bạn đã làm gì trong những tuần đó?
 

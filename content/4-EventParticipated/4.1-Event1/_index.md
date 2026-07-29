@@ -35,4 +35,4 @@ Attending the Introduction to AWS event was incredibly engaging and immensely br
 
 ### Some event photos
 
-Add your event photos here
+![AWS DevOps Tool Landscape](../../images/4-EventParticipated/event_1.jpg)

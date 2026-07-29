@@ -35,4 +35,4 @@ Việc tham gia sự kiện này mang lại cho tôi những trải nghiệm vô
 
 ### Hình ảnh sự kiện
 
-Bạn có thể chèn thêm hình ảnh sự kiện tại đây
+![Bản đồ công cụ AWS DevOps](../../images/4-EventParticipated/event_1.jpg)

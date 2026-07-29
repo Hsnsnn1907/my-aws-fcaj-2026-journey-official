@@ -5,38 +5,78 @@ weight = 2
 chapter = false
 +++
 
-Tên sự kiện: GenAI-powered App-DB Modernization workshop
+Tên sự kiện: GenAI-powered App-DB Modernization Workshop & Meetup
 
-Thời gian: 09:00, 13 tháng 8, 2025
+Thời gian: 09:00, 13 tháng 6, 2026
 
 Địa điểm: Tầng 26, Tháp Bitexco, 02 Đường Hải Triều, Phường Bến Nghé, TP. Hồ Chí Minh
 
 Vai trò: Người tham dự
 
 ### Mục tiêu sự kiện
-
-Sự kiện được tổ chức nhằm chia sẻ các thực tiễn tốt nhất liên quan đến việc thiết kế ứng dụng hiện đại, đồng thời giới thiệu chuyên sâu phương pháp Domain-Driven Design và kiến trúc hướng sự kiện cho người tham gia. Chương trình hướng tới việc cung cấp các hướng dẫn kỹ thuật cốt lõi trong thao tác lựa chọn dịch vụ máy tính tối ưu phù hợp với từng khối lượng công việc. Hơn thế nữa, mục tiêu trọng tâm là giới thiệu các công cụ trí tuệ nhân tạo hiện đại nhằm đẩy nhanh và tương trợ hiệu quả vòng đời phát triển phần mềm.
+- Giới thiệu các kỹ thuật hiện đại hóa hệ thống ứng dụng và cơ sở dữ liệu bằng công cụ AI tạo sinh
+- Bàn luận chiến lược tối ưu hóa hạ tầng microservices và kiến trúc serverless
+- Trình bày nghiên cứu tình huống triển khai thực tế về hành trình di chuyển từ monolith sang hệ thống đám mây
+- Cung cấp góc nhìn chuyên sâu về tối ưu truy vấn cơ sở dữ liệu bằng GraphRAG và phương pháp đánh chỉ mục nâng cao
+- Giải thích vai trò của AWS Bedrock, Lambda, và DynamoDB trong thiết kế ứng dụng AI hiện đại
 
 ### Diễn giả
-
-Buổi trình bày được dẫn dắt bởi Jignesh Shah, Giám đốc nền tảng Open Source Databases, hợp tác cùng Erica Liu, Chuyên gia cấp cao về Hiện đại hóa Ứng dụng. Song song đó, Fabrianne Effendi mang cương vị là Chuyên gia Kiến trúc Serverless tại Amazon Web Services cũng đã đóng góp những báo cáo kỹ thuật vô cùng sâu sắc.
+- Anh Hiếu Nghị – Kỹ sư DevOps
+- Anh Kiên và anh Thọ – Kiến trúc sư Giải pháp
+- Anh Hoàng Trọng – Chuyên gia AWS Cấp cao
+- Anh Đạt và anh Cường – Kỹ sư Cơ sở dữ liệu & AI
 
 ### Điểm nhấn nổi bật
+**Hiện đại hóa Ứng dụng & Cơ sở Dữ liệu**
+- Nâng cấp kiến trúc cơ sở dữ liệu để hỗ trợ các luồng xử lý AI cường độ cao.
+- Phân tách cấu trúc monolith cũ kỹ thành kiến trúc serverless hướng sự kiện nhằm giảm thiểu chi phí vận hành.
+- Các chiến lược di chuyển cơ sở dữ liệu mà không gây gián đoạn dịch vụ.
 
-Những cuộc thảo luận ban đầu tập trung sâu vào việc phân tích các hạn chế nghiêm trọng của các kiến trúc ứng dụng nguyên khối cũ kỹ, chứng minh cách chu kỳ cập nhật bảo trì chậm chạp luôn dẫn định đến rủi ro doanh thu tụt giảm nhanh chóng. Các chuyên gia cũng thực hiện mô tả kỹ lưỡng cách thay đổi sang hệ thống module hiện đại sẽ lập tức giải quyết bài toán hiệu năng thông qua việc chia các khối chức năng thành từng vi dịch vụ độc lập giao tiếp qua định tuyến sự kiện. 
+**Tích hợp Trí tuệ Nhân tạo Tạo sinh**
+- Triển khai các mô hình ngôn ngữ lớn (LLM) kết nối trực tiếp với nguồn dữ liệu doanh nghiệp thông qua AWS Bedrock.
+- Ứng dụng GraphRAG để gia tăng vượt bậc khả năng nhận diện ngữ cảnh cấu trúc và các chỉ số chuyên biệt của AI.
+- Vận hành các luồng xử lý AI serverless thông qua cơ chế điều phối AWS Lambda và API Gateway.
 
-Chương trình cung cấp hướng dẫn tận tình về lý thuyết Domain-Driven Design bao gồm các bước xây dựng chuỗi sự kiện, sắp xếp thời gian hợp lý, định vị vai trò tương tác, và rào chắn các biến ngữ cảnh được ví dụ qua ứng dụng quản lý nhà sách ảo. Hướng kỹ thuật sau đó dịch chuyển tập trung vào kiến trúc Hướng Sự Kiện, thể hiện mô hình publish và subscribe cũng như luồng streaming tích hợp nhằm gia cố sự khả dụng ở quy mô siêu lớn. Điểm quan trọng cuối cùng là phần biểu diễn trực tiếp Amazon Q Developer, tiết lộ cách khả năng của AI có thể hoàn toàn tự động thực thi các chiến lược chuyển đổi code cũ, linh hoạt từ mã nguồn Java cho tới tái cấu trúc cơ sở dữ liệu trên đám mây.
+**Tối ưu hóa Microservices**
+- Tái cấu trúc các tầng API nhằm tận dụng hàng đợi tin nhắn bất đồng bộ như RabbitMQ.
+- Tối ưu hóa khung giao tiếp cơ sở dữ liệu sử dụng Prisma và cơ sở dữ liệu vector Qdrant.
+- Hướng dẫn thực hành phân định ranh giới microservice và context mapping theo phương pháp DDD.
 
 ### Bài học rút ra
+**Tư duy thiết kế**
+- Kiến trúc dẫn dắt bởi nghiệp vụ: Hạ tầng phải tuân thủ quy tắc kinh doanh thực tế thay vì lựa chọn công nghệ theo phỏng đoán.
+- Ưu tiên bất đồng bộ (Asynchronous-first): Giảm thiểu sự phụ thuộc chặt chẽ giữa các microservices để tối đa hóa khả năng chịu lỗi.
 
-Tôi thu thập được rất nhiều kiến thức cốt lõi chú trọng vào tư duy đặt nghiệp vụ kinh doanh lên ưu tiên hàng đầu, bảo đảm mọi thiết kế phát sinh ra đều hỗ trợ quy trình công ty thay vì chỉ bám víu vào hệ công nghệ đơn thuần. Việc thống nhất hệ ngôn ngữ chung góp phần tạo cầu nối giao tiếp vững chắc phối hợp hai mảng phát triển kỹ thuật và đội ngũ kinh doanh. Các phương pháp mô hình hóa logic Event Storming cũng chứng tỏ năng lực to lớn khi áp dụng vào việc thay thế chuỗi lời gọi hàm trực tiếp sang các chuỗi phản hồi tín hiệu bất đồng bộ an toàn. Sự kiện nhấn mạnh rằng quy trình hiện đại hóa yêu cầu một lộ trình triển khai vững chắc từng pha nhằm làm triệt tiêu khả năng phát sinh lỗi hệ thống trầm trọng trong thời gian ứng dụng các công cụ như Amazon Q Developer.
+**Kiến trúc hệ thống**
+- Sử dụng các tầng serverless (AWS Lambda) cho logic backend có khả năng mở rộng linh hoạt theo mô hình pay-as-you-go.
+- Tích hợp cơ sở dữ liệu vector (Qdrant) và GraphRAG để xây dựng các trợ lý AI có ngữ cảnh doanh nghiệp.
+- Tối ưu kế hoạch thực thi truy vấn bằng phương pháp phân tích cú pháp và đánh chỉ mục hiệu quả.
+
+**Ứng dụng vào công việc**
+- Áp dụng các mô hình bất đồng bộ vào hệ thống microservices hiện tại để giải quyết tắc nghẽn API.
+- Thử nghiệm AWS Bedrock và Lambda cho các tính năng AI nhẹ tích hợp vào sản phẩm.
+- Tái cấu trúc lược đồ truy cập cơ sở dữ liệu để tận dụng tính năng multi-schema của Prisma.
 
 ### Trải nghiệm sự kiện
+Việc tham gia buổi Workshop GenAI-powered App-DB Modernization mang lại giá trị cực kỳ to lớn, giúp tôi nắm vững cách triển khai các công cụ AI tiên tiến trên nền tảng hạ tầng đám mây. Trải nghiệm cốt lõi bao gồm:
 
-Việc tham gia buổi workshop về Hiện đại hóa Kiến trúc Thông qua AI thực sự trao lại giá trị rất lớn cho bản thân tôi, tặng cho tôi một cái nhìn toàn cảnh tuyệt vời làm thế nào để thay đổi an toàn các tầng dữ liệu bằng kỹ thuật tối ưu nhất. Cơ hội tiếp thu tri thức trực tiếp từ các diễn giả lão luyện làm việc tại AWS đã củng cố đáng kể sức mạnh lý thuyết mô hình để tôi áp dụng vào thiết kế độc lập. 
+**Học hỏi từ các chuyên gia hàng đầu**
+- Được trao đổi trực tiếp với các kỹ sư DevOps và chuyên gia cơ sở dữ liệu giàu kinh nghiệm về các điểm nghẽn thực tế trong sản phẩm.
+- Thu nhận lời khuyên thiết thực về cách quản lý vòng đời microservices từ các bậc tiền bối chuyên nghiệp.
 
-Được chủ động tham gia phân tích kỹ thuật Event Storming đã rèn luyện não bộ của tôi tạo thành thói quen biểu diễn công việc kinh doanh phức tạp sang các tác vụ nhỏ gọn. Ngoài ra việc khám phá bộ công cụ Amazon Q Developer cũng thắp lên rất nhiều ý tưởng tuyệt vời hỗ trợ tôi cải tiến công việc tự động hóa, trải dài từ giai đoạn bắt đầu vạch định hướng dự án cho đến khi duy trì sự ổn định trên hệ thống trực tiếp. Cuối cùng, những cơ hội nâng cao quan hệ ngoại giao và mở rộng đối thoại cùng các chuyên gia đã mang lại sức mạnh to lớn giúp tôi tự tin thiết kế nên một hệ sinh thái bất đồng bộ vững chãi cho tương lai sau này.
+**Tiếp cận trải nghiệm thực chiến**
+- Tham dự các bài thuyết trình phân tích từng bước di chuyển cơ sở dữ liệu monolith lên đám mây.
+- Khám phá trực tiếp quy trình AI tự động hóa code và tối ưu truy vấn trên hạ tầng AWS.
+
+**Tận dụng công cụ hiện đại**
+- Trải nghiệm khả năng của Amazon Bedrock trong việc cấu trúc các dịch vụ AI sẵn sàng cho doanh nghiệp.
+- Hiểu rõ cách tiếp cận triển khai và giám sát cho các kiến trúc serverless hoàn chỉnh.
+
+**Bài học kinh nghiệm**
+- Thiết kế ứng dụng hiện đại đòi hỏi sự kết hợp chặt chẽ giữa AI, serverless compute và các endpoint cơ sở dữ liệu được tối ưu hóa chuyên sâu.
+- Di chuyển microservices theo từng giai đoạn giúp giảm thiểu thời gian ngừng hoạt động trên môi trường production và giữ cho quá trình triển khai luôn có thể dự đoán được.
 
 ### Hình ảnh sự kiện
+![AWS GenAI-powered App-DB Modernization](../../images/4-EventParticipated/event_2.jpeg)
 
-Bạn có thể chèn thêm hình ảnh sự kiện tại đây
+Nhìn chung, buổi giao lưu đã kết nối thành công giữa kiến thức cơ sở dữ liệu chuyên sâu và các mô hình AI hiện đại, vạch ra lộ trình rõ ràng cho tôi trong việc xây dựng các dự án đám mây có tính mở rộng cao.

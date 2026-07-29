@@ -1,0 +1,31 @@
++++
+title = "Tự đánh giá"
+date = 2026-07-27
+weight = 6
+chapter = false
++++
+
+# Tự đánh giá / Self-evaluation
+
+| Tiêu chí / Criteria | Mức / Level | Nhận xét / Comment |
+|---|---|---|
+| 1. Kiến thức chuyên môn & kỹ năng nghề nghiệp / Professional knowledge & skills | Tốt | Trong 11 tuần thực tập, tôi đã nắm vững workflow CI/CD thực tế trên AWS (CodeBuild, ECR, S3, SSM, CloudWatch, Secrets Manager), từ lý thuyết đến cấu hình bằng `buildspec.yml` và vận hành pipeline end-to-end. Đồng thời tôi cũng đã làm quen với stack microservice (NestJS 11 + GraphQL, FastAPI + gRPC, RabbitMQ, Prisma multi-schema) ở mức đọc hiểu, debug và sửa lỗi, không chỉ sử dụng bề mặt. Kết quả cụ thể: 2 service production chạy trên EC2, 4 lỗi build khó đã fix, 1 image Docker cắt từ 1.2GB xuống 280MB. Tuy nhiên kiến thức về Terraform/IaC và Kubernetes vẫn là khoảng trống tôi cần bù đắp ở giai đoạn sau. |
+| 2. Khả năng học hỏi / Ability to learn | Tốt | Tôi có khả năng tự học tốt qua tài liệu AWS Documentation và blog kỹ thuật, không phụ thuộc hoàn toàn vào mentor. Ví dụ: khi gặp bug ECR scan on push fail, tôi đã tự trace log CloudWatch, đọc AWS docs về `ECRPushPolicy`, và tìm ra nguyên nhân (thiếu permission `ecr:GetDownloadUrlForLayer`) trong vòng nửa ngày thay vì chờ hướng dẫn. Mỗi tuần tôi dành 2-3 giờ đọc AWS What's New và 1-2 case study từ AWS Blog để cập nhật dịch vụ mới. |
+| 3. Tính chủ động / Proactiveness | Tốt | Tôi chủ động đề xuất 3 sáng kiến có giá trị: (1) chuyển từ `jq` sang Python heredoc trong script deploy để tránh corrupt secret có newline (fix được bug `FIREBASE_PRIVATE_KEY` đã làm kẹt pipeline cả ngày); (2) bật ECR scan on push để tự động phát hiện CVE trong image; (3) refactor backend cũ `Server/` + `Embed_Server/` thành `api_service/` + `search_service/` trước khi mentor yêu cầu. Khi hết task được giao, tôi tự tìm phần việc tiếp theo trong backlog thay vì chờ phân công. |
+| 4. Tinh thần trách nhiệm / Sense of responsibility | Tốt | Tôi hoàn thành đúng hạn 100% task được giao và luôn báo cáo sớm nếu có rủi ro trễ. Cụ thể: bài quiz AWS Cloud Practitioner module 1-2 nộp đúng hạn tuần 2; báo cáo worklog 11 tuần nộp đúng deadline 31/07/2026; code CI/CD đẩy lên branch `feat/CI-CD` đầy đủ 6 commit có message rõ ràng. Khi nhận task khó (gỡ bug buildspec `cd $CODEBUILD_SRC_DIR`), tôi chủ động ở lại muộn để hoàn thành trước khi về. |
+| 5. Kỷ luật / Discipline | Khá | Tôi tuân thủ giờ giấc làm việc (8h-17h, Mon-Fri) ở mức tốt, điểm danh đầy đủ, không nghỉ không phép. Tuy nhiên, tôi thừa nhận có 2-3 lần đầu tuần làm việc chưa vào focus ngay (mất 30-45 phút đọc tin tức / sắp xếp task) — đây là điểm tôi cần cải thiện bằng cách lập daily checklist 5 phút đầu ngày. |
+| 6. Tư duy cầu tiến / Progressive mindset | Khá | Tôi sẵn sàng nhận feedback từ mentor và đồng nghiệp, áp dụng vào code ngay trong iteration tiếp theo. Ví dụ: khi mentor review code góp ý dùng IAM Role thay vì hard-code AWS access key, tôi đã refactor lại script deploy trong vòng 1 ngày. Tuy nhiên, có lúc tôi vẫn bảo vệ giải pháp của mình quá lâu trước khi chịu thay đổi — cần học cách tách bạch giữa "giải thích lý do" và "chấp nhận quyết định cuối". |
+| 7. Giao tiếp / Communication | Khá | Tôi viết báo cáo worklog, blog kỹ thuật và tài liệu README/OPERATIONS rõ ràng, có cấu trúc; trình bày trước nhóm FCAJ cuối kỳ cũng đạt yêu cầu. Điểm yếu là giao tiếp realtime trong nhóm nhỏ: có lúc tôi im lặng khi không đồng ý, thay vì nói ra sớm; và viết commit message đôi khi còn quá ngắn, thiếu context cho người đọc sau 1 tháng. |
+| 8. Làm việc nhóm / Teamwork | Tốt | Tôi hỗ trợ 2 bạn cùng nhóm khi họ gặp khó khăn với Docker multi-stage và `buildspec.yml`, dù không phải task của tôi. Trong buổi review code nhóm, tôi đóng góp 4-5 ý kiến có giá trị về cấu trúc pipeline và cách debug log CloudWatch. Tôi cũng chủ động chia sẻ lại tài liệu AWS docs nội bộ cho cả team sau khi đọc xong, thông qua channel chat FCAJ. |
+| 9. Phong cách làm việc chuyên nghiệp / Professional conduct | Tốt | Tôi luôn tôn trọng mentor, lễ phép với đồng nghiệp, không tranh cãi khi bị góp ý. Bảo mật thông tin dự án: không commit `.env`, AWS access key, hay secret vào Git (đã dùng `.gitignore` + pre-commit check + `git-secrets`). Tuân thủ nội quy FCAJ về giờ giấc, đồng phục, và quy trình nộp báo cáo. |
+| 10. Kỹ năng giải quyết vấn đề / Problem-solving skills | Khá | Tôi xác định được vấn đề rõ ràng, đề xuất giải pháp có sáng tạo và chủ động verify trước khi commit. Ví dụ điển hình: bug `FIREBASE_PRIVATE_KEY` bị escape sai newline khiến deploy fail — tôi đã phân tích 3 hướng (dùng `jq`, dùng base64, dùng Python heredoc), cân nhắc trade-off, và chọn Python heredoc là phương án an toàn nhất. Điểm cần cải thiện: đôi lúc tôi nhảy thẳng vào fix mà chưa dành đủ thời gian phân tích root cause, dẫn đến sửa 2-3 lần mới đúng. |
+| 11. Đóng góp cho dự án / nhóm / Contribution to project/team | Tốt | Đóng góp thực tế: (1) thiết kế và triển khai pipeline CI/CD hoàn chỉnh cho 2 microservice, giảm thời gian deploy từ 30 phút thủ công xuống 5 phút tự động; (2) refactor backend thành 2 service tách biệt, clean code base; (3) viết 11 file worklog LaTeX + 1 báo cáo tổng kết + 1 tài liệu OPERATIONS cho on-call; (4) chủ động share 3 bài blog kỹ thuật cho AWS Study Group. Mentor và team lead đã ghi nhận đóng góp này trong buổi review cuối kỳ. |
+| 12. Đánh giá tổng thể / Overall | Tốt | Tổng kết 11 tuần thực tập: tôi đã đi từ "chưa từng chạm AWS" đến "tự vận hành pipeline CI/CD production với monitoring đầy đủ". Mức độ hoàn thành mục tiêu kỳ vọng: 85% (chưa đạt Terraform/IaC và auto-scaling là những mục tiêu stretch). Tôi tự đánh giá mình đạt mức "Tốt" tổng thể, sẵn sàng cho vị trí Cloud Engineer fresher/Junior sau khi bổ sung thêm kiến thức Terraform và Kubernetes. |
+
+### Tóm tắt nhanh / Quick summary
+
+- **Tổng số tiêu chí:** 12 tiêu chí.
+- **Mức "Tốt":** 8 tiêu chí (1, 2, 3, 4, 8, 9, 11, 12) — chiếm 67%.
+- **Mức "Khá":** 4 tiêu chí (5, 6, 7, 10) — chiếm 33%.
+- **Mức "Trung bình":** 0 tiêu chí.
+- **Nhận xét chung:** Đánh giá tổng thể đạt **Tốt**. Các tiêu chí "Khá" đều liên quan đến kỷ luật cá nhân, tư duy cầu tiến, giao tiếp và phương pháp giải quyết vấn đề — những kỹ năng mềm cần rèn luyện thêm trong môi trường làm việc thực tế. Về kỹ năng kỹ thuật cốt lõi, tôi tự tin có thể đảm nhận task vận hành cloud pipeline ở mức production.

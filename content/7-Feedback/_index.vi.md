@@ -3,11 +3,7 @@ title = "Chia sẻ và phản hồi"
 date = 2026-07-27
 weight = 7
 chapter = false
-+++
-
-# Chia sẻ và phản hồi / Sharing and Feedback
-
-## Cảm nhận về chương trình / Program Reflection
++++## Cảm nhận về chương trình / Program Reflection
 
 Chương trình thực tập FCAJ First Cloud AI Journey là một trong những trải nghiệm học tập giá trị nhất mà tôi từng tham gia. Điểm khác biệt lớn nhất so với các khóa học online là tính **thực chiến**: thay vì chỉ đọc docs và làm bài tập lý thuyết, tôi được giao một dự án production thật (VideoPlatform với backend microservice 2 service), phải tự thiết kế pipeline CI/CD, tự debug lỗi build, tự vận hành trên AWS Free Tier và chịu trách nhiệm về kết quả deploy. Chính áp lực "production-like" này giúp tôi học nhanh gấp 3-4 lần so với tự học thông thường, vì mỗi sai lầm đều ảnh hưởng đến demo cuối kỳ và feedback từ mentor.
 

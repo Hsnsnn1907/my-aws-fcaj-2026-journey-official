@@ -3,11 +3,7 @@ title = "Sự kiện đã tham gia"
 date = 2026-07-15
 weight = 4
 chapter = false
-+++
-
-# Sự kiện đã tham gia
-
-## Các hoạt động chính
++++## Các hoạt động chính
 
 1. Orientation FCAJ và onboarding thực tập
 2. Review code hàng tuần cùng mentor

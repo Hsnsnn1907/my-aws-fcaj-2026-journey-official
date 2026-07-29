@@ -3,11 +3,7 @@ title = "Tự đánh giá"
 date = 2026-07-27
 weight = 6
 chapter = false
-+++
-
-# Tự đánh giá / Self-evaluation
-
-| Tiêu chí / Criteria | Mức / Level | Nhận xét / Comment |
++++| Tiêu chí / Criteria | Mức / Level | Nhận xét / Comment |
 |---|---|---|
 | 1. Kiến thức chuyên môn & kỹ năng nghề nghiệp / Professional knowledge & skills | Tốt | Trong 11 tuần thực tập, tôi đã nắm vững workflow CI/CD thực tế trên AWS (CodeBuild, ECR, S3, SSM, CloudWatch, Secrets Manager), từ lý thuyết đến cấu hình bằng `buildspec.yml` và vận hành pipeline end-to-end. Đồng thời tôi cũng đã làm quen với stack microservice (NestJS 11 + GraphQL, FastAPI + gRPC, RabbitMQ, Prisma multi-schema) ở mức đọc hiểu, debug và sửa lỗi, không chỉ sử dụng bề mặt. Kết quả cụ thể: 2 service production chạy trên EC2, 4 lỗi build khó đã fix, 1 image Docker cắt từ 1.2GB xuống 280MB. Tuy nhiên kiến thức về Terraform/IaC và Kubernetes vẫn là khoảng trống tôi cần bù đắp ở giai đoạn sau. |
 | 2. Khả năng học hỏi / Ability to learn | Tốt | Tôi có khả năng tự học tốt qua tài liệu AWS Documentation và blog kỹ thuật, không phụ thuộc hoàn toàn vào mentor. Ví dụ: khi gặp bug ECR scan on push fail, tôi đã tự trace log CloudWatch, đọc AWS docs về `ECRPushPolicy`, và tìm ra nguyên nhân (thiếu permission `ecr:GetDownloadUrlForLayer`) trong vòng nửa ngày thay vì chờ hướng dẫn. Mỗi tuần tôi dành 2-3 giờ đọc AWS What's New và 1-2 case study từ AWS Blog để cập nhật dịch vụ mới. |

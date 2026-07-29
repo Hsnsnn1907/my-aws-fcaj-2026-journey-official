@@ -3,11 +3,7 @@ title = "Workshop"
 date = 2026-07-27
 weight = 5
 chapter = false
-+++
-
-# Workshop: CI/CD AWS cho VideoPlatform Microservices
-
-## 1) Phạm vi workshop
++++## 1) Phạm vi workshop
 
 Workshop này mô tả quá trình chuyển từ deploy thủ công sang luồng CI/CD AWS-native cho 2 backend service:
 

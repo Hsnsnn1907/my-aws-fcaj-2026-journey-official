@@ -3,11 +3,7 @@ title = "Self-evaluation"
 date = 2026-07-27
 weight = 6
 chapter = false
-+++
-
-# Self-evaluation
-
-| Criteria | Level | Comment |
++++| Criteria | Level | Comment |
 |---|---|---|
 | 1. Professional knowledge & skills | Good | In my 11-week internship, I mastered a real-world CI/CD workflow on AWS (CodeBuild, ECR, S3, SSM, CloudWatch, Secrets Manager)—from theory to `buildspec.yml` configuration and end-to-end operation. I also gained practical experience navigating a microservice stack (NestJS 11 + GraphQL, FastAPI + gRPC, RabbitMQ, Prisma multi-schema) in terms of reading, debugging, and fixing issues beyond just surface-level usage. Concrete outcomes: deployed 2 production services on EC2, solved 4 complex build bugs, and optimized a Docker image from 1.2GB down to 280MB. However, my knowledge of Terraform/IaC and Kubernetes remains a gap to fill in the next phase. |
 | 2. Ability to learn | Good | I demonstrated strong self-learning through AWS Documentation and technical blogs, minimizing reliance on mentors. For example, when encountering an ECR scan-on-push failure, I independently traced CloudWatch logs, consulted AWS docs on `ECRPushPolicy`, and uncovered the root cause (missing `ecr:GetDownloadUrlForLayer` permission) within a half-day rather than waiting for guidance. I also dedicate 2-3 hours weekly to catching up on AWS What's New and exploring 1-2 case studies from the AWS Blog to stay current. |

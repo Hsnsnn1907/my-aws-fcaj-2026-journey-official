@@ -3,11 +3,7 @@ title = "Events Participated"
 date = 2026-07-15
 weight = 4
 chapter = false
-+++
-
-# Events Participated
-
-## Key events
++++## Key events
 
 1. FCAJ orientation and internship onboarding
 2. Weekly mentor code-review sessions

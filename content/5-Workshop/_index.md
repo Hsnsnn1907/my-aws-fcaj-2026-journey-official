@@ -3,11 +3,7 @@ title = "Workshop"
 date = 2026-07-27
 weight = 5
 chapter = false
-+++
-
-# Workshop: AWS CI/CD for VideoPlatform Microservices
-
-## 1) Workshop scope
++++## 1) Workshop scope
 
 This workshop documents how the project moved from manual deployment to an AWS-native CI/CD flow for two backend services:
 

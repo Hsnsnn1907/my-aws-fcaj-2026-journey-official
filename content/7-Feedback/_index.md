@@ -3,11 +3,7 @@ title = "Sharing and Feedback"
 date = 2026-07-27
 weight = 7
 chapter = false
-+++
-
-# Sharing and Feedback
-
-## Program Reflection
++++## Program Reflection
 
 The FCAJ First Cloud AI Journey internship is one of the most valuable learning experiences I have ever joined. The biggest differentiator from online courses is its **real-world** nature: instead of just reading docs and doing theoretical exercises, I was assigned an actual production-like project (VideoPlatform with a 2-service microservice backend), had to design the CI/CD pipeline myself, debug build errors, operate on AWS Free Tier, and take responsibility for deploy outcomes. This "production-like" pressure made me learn 3-4 times faster than self-study, because every mistake affected the final demo and mentor feedback.
 

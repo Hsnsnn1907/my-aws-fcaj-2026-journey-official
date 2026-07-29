@@ -3,11 +3,7 @@ title = "Project Proposal"
 date = 2026-06-26
 weight = 2
 chapter = false
-+++
-
-# Project Proposal
-
-## Project Overview
++++## Project Overview
 
 **VideoPlatform** is a semantic video search & sharing platform that lets users upload videos, auto-processes them (transcode, frame extraction, AI-generated captions), and supports content-based search beyond simple tags/titles. As the FCAJ internship deliverable, I designed and shipped an **end-to-end AWS CI/CD pipeline** for the backend: 2 microservices (`api_service` NestJS GraphQL gateway + `search_service` FastAPI vector search) running on EC2, containerized via Docker, with automated build & deploy through AWS CodeBuild → ECR → S3 → SSM. Real-world use case: a video platform for Vietnamese content creators; core value is reducing "code commit → production deploy" time from several hours of manual work down to ~5 minutes automated, while ensuring reproducibility (immutable images, secrets via Secrets Manager, single-command rollback).
 

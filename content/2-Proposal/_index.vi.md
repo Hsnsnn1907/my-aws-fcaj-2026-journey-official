@@ -3,11 +3,7 @@ title = "Đề xuất dự án"
 date = 2026-06-26
 weight = 2
 chapter = false
-+++
-
-# Đề xuất dự án / Project Proposal
-
-## Tổng quan dự án / Project Overview
++++## Tổng quan dự án / Project Overview
 
 Dự án **VideoPlatform** là một nền tảng chia sẻ & tìm kiếm video ngữ nghĩa (semantic video search) cho phép người dùng upload video, hệ thống tự động xử lý (transcode, trích xuất frame, sinh caption bằng AI) và cho phép tìm kiếm theo nội dung thay vì chỉ theo tag/title. Trong khuôn khổ thực tập FCAJ, tôi đã thiết kế và triển khai **CI/CD pipeline hoàn chỉnh trên AWS** cho backend của dự án, gồm 2 microservice (`api_service` NestJS GraphQL gateway + `search_service` FastAPI vector search) chạy trên EC2, đóng gói qua Docker, build & deploy tự động qua AWS CodeBuild → ECR → S3 → SSM. Use case thực tế: nền tảng video cho cộng đồng content creator Việt Nam; giá trị cốt lõi là rút ngắn thời gian từ "code commit" đến "service chạy trên production" từ vài giờ thủ công xuống còn ~5 phút tự động, đồng thời đảm bảo reproducibility (image bất biến, secret an toàn qua Secrets Manager, rollback một lệnh).
 

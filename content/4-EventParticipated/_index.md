@@ -9,11 +9,11 @@ During my internship, I participated in three events. Each one was a memorable e
 
 ## Event 1
 
-**Event Name:** GenAI-powered App-DB Modernization workshop  
+**Event Name:** AWS & Modern Technologies Knowledge Sharing  
 
-**Date & Time:** 09:00, August 13, 2025  
+**Date & Time:** 09:00, June 6, 2026  
 
-**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+**Location:** Offline  
 
 **Role:** Attendee  
 
@@ -33,10 +33,10 @@ During my internship, I participated in three events. Each one was a memorable e
 
 ## Event 3
 
-**Event Name:** AWS Community Day Vietnam 2026  
+**Event Name:** Amazon Web Services (AWS): Enterprise Cloud Architectures and Industry Applications  
 
-**Date & Time:** 08:00, July 18, 2026  
+**Date & Time:** 09:00 - 12:00, July 4, 2026  
 
-**Location:** Grand Palace Convention Center, 142/18 Cong Hoa Street, Ward 4, Tan Binh District, Ho Chi Minh City  
+**Location:** Level 26, Bitexco Financial Tower  
 
-**Role:** Presenter  
+**Role:** Attendee  

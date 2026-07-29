@@ -9,11 +9,11 @@ Trong quá trình thực tập, tôi đã tham gia ba sự kiện. Mỗi sự ki
 
 ## Sự kiện 1
 
-**Tên sự kiện:** GenAI-powered App-DB Modernization workshop  
+**Tên sự kiện:** AWS & Modern Technologies Knowledge Sharing  
 
-**Thời gian:** 09:00, 13 tháng 8, 2025  
+**Thời gian:** 09:00, 6 tháng 6, 2026  
 
-**Địa điểm:** Tầng 26, Tháp Bitexco, 02 Đường Hải Triều, Phường Bến Nghé, TP. Hồ Chí Minh  
+**Địa điểm:** Offline  
 
 **Vai trò:** Người tham dự  
 
@@ -33,10 +33,10 @@ Trong quá trình thực tập, tôi đã tham gia ba sự kiện. Mỗi sự ki
 
 ## Sự kiện 3
 
-**Tên sự kiện:** AWS Community Day Vietnam 2026  
+**Tên sự kiện:** Amazon Web Services (AWS): Enterprise Cloud Architectures and Industry Applications  
 
-**Thời gian:** 08:00, 18 tháng 7, 2026  
+**Thời gian:** 09:00 - 12:00, 4 tháng 7, 2026  
 
-**Địa điểm:** Trung tâm Hội nghị Grand Palace, 142/18 Đường Cộng Hòa, Phường 4, Quận Tân Bình, TP. Hồ Chí Minh  
+**Địa điểm:** Tầng 26, Tháp Bitexco Financial Tower  
 
-**Vai trò:** Diễn giả  
+**Vai trò:** Người tham dự  

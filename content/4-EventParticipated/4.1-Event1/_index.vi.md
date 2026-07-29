@@ -5,7 +5,7 @@ weight = 1
 chapter = false
 +++
 
-Tên sự kiện: Introduction to AWS
+Tên sự kiện: AWS & Modern Technologies Knowledge Sharing
 
 Thời gian: 09:00, 6 tháng 6, 2026
 
@@ -15,24 +15,26 @@ Vai trò: Người tham dự
 
 ### Mục tiêu sự kiện
 
-Mục tiêu chính của sự kiện là cung cấp những kiến thức nền tảng nhất về điện toán đám mây thông qua hệ sinh thái Amazon Web Services. Sự kiện giúp làm rõ sự khác biệt cốt lõi về mặt cấu trúc giữa máy ảo truyền thống và công nghệ container hóa hiện đại. Ngoài ra, chương trình còn giới thiệu các công cụ hỗ trợ AWS thực tiễn và trình bày chi tiết cách ứng dụng điện toán đám mây để xây dựng và vận hành một hệ thống game trực tiếp.
+Mục tiêu cốt lõi của sự kiện là mang đến một góc nhìn đa chiều về hệ sinh thái công nghệ hiện đại, kết hợp chặt chẽ giữa các nền tảng hạ tầng đám mây sâu rộng và những bộ công cụ phát triển phần mềm tiên tiến nhất. Chương trình hướng tới việc kiến tạo một không gian học thuật toàn diện, nơi người tham dự có thể tiếp thu các phương pháp luận kỹ thuật thực tiễn trải dài từ nền tảng đóng gói ứng dụng, kiến trúc trí tuệ nhân tạo bậc cao, mạng lưới giao tiếp trò chơi thời gian thực, cơ chế bảo mật không gian mạng kiên cố, cho đến lộ trình thăng tiến sự nghiệp thực tế trong ngành công nghệ thông tin.
 
 ### Diễn giả
 
-Diễn giả dẫn dắt chương trình là anh Hùng Gia, người đã nhiệt tình chia sẻ những nền tảng kiến thức chuyên sâu và trực tiếp thực hiện các phần demo công nghệ thực tế.
+Sự kiện quy tụ một đội ngũ chuyên gia xuất sắc đến từ nhiều lĩnh vực chuyên biệt khác nhau. Các diễn giả vinh dự góp mặt bao gồm anh Bảo Huỳnh với chủ đề về Docker, anh Lê Hoàng Gia Đại trình bày về bảo mật đám mây, anh Nguyễn Quốc Bảo chia sẻ về lập trình mạng trong trò chơi tương tác, anh Việt Phát giới thiệu các khái niệm AI tiên tiến, anh Trương Phước với công cụ kỹ thuật chuyên sâu, và anh Vinh Trần cùng câu chuyện phát triển sự nghiệp cá nhân đầy cảm hứng.
 
 ### Điểm nhấn nổi bật
 
-Nội dung sự kiện đi sâu vào việc phân tích và so sánh kiến trúc khi chạy ứng dụng trên máy ảo so với Docker container. Bài trình bày giải thích cặn kẽ cách các container chia sẻ chung nhân hệ điều hành để đóng gói ứng dụng gọn nhẹ và tăng tốc độ triển khai, loại bỏ hoàn toàn gánh nặng phải giả lập phần cứng của máy ảo. Diễn giả Hùng Gia cũng đã giới thiệu hàng loạt các công cụ hỗ trợ cực kỳ hữu ích trên AWS giúp lập trình viên tối ưu hóa quy trình làm việc, ví dụ như dịch vụ lưu trữ container Amazon ECR. Điểm nhấn thú vị và thu hút nhất chính là phần hướng dẫn trực tiếp cách sử dụng máy chủ AWS để thiết lập, vận hành, và làm một tựa game chạy trực tiếp trên môi trường đám mây với độ phản hồi cực nhanh.
+Các bài thuyết trình kỹ thuật đã bao quát một phổ kiến thức vô cùng rộng lớn. Anh Bảo Huỳnh mở đầu phần phân tích chuyên sâu bằng việc mổ xẻ các chiến lược đóng gói ứng dụng thông qua Docker, minh họa cách thức triển khai phần mềm độc lập hoàn toàn với môi trường máy chủ vật lý. Ngay sau đó, anh Lê Hoàng Gia Đại dịch chuyển trọng tâm sang lĩnh vực an toàn thông tin, mang đến một góc nhìn sâu sắc về việc bảo vệ hệ thống web thông qua Tường lửa Ứng dụng Web của AWS (AWS WAF) kết hợp cùng Hệ thống Phát hiện Xâm nhập Mạng dựa trên Học máy (ML NIDS) nhằm chủ động ngăn chặn các luồng dữ liệu độc hại. Hướng đến lĩnh vực truyền thông tương tác, anh Nguyễn Quốc Bảo đã thu hút khán giả bằng phần trình diễn tích hợp WebSocket bên trong công cụ Godot để duy trì kết nối luân chuyển với độ trễ cực thấp cho các kiến trúc game nhập vai nhiều người chơi.
+
+Thêm vào đó, sự kiện còn tiến sâu vào ranh giới của Trí tuệ Nhân tạo khi anh Việt Phát phân tích cấu trúc GraphRAG (Hệ thống Sinh văn bản Tăng cường Truy xuất dựa trên Đồ thị), giải thích tường tận cách các biểu đồ tri thức có thể nâng cấp vượt bậc độ chính xác và khả năng nhận thức ngữ cảnh của các mô hình ngôn ngữ lớn. Bổ sung cho sự đa dạng kỹ thuật, anh Trương Phước mang đến những góc nhìn mới mẻ về tối ưu hóa quy trình vận hành hệ thống phần mềm. Vượt ra ngoài những khía cạnh kiến trúc thuần túy, anh Vinh Trần đã chia sẻ một câu chuyện phát triển bản thân cực kỳ truyền cảm hứng về hành trình vươn lên từ vị trí IT Helpdesk đến vai trò Quản trị viên Hệ thống Cấp cao (Senior Sysadmin), qua đó đưa ra những lời khuyên thực tế về việc trau dồi kỹ năng, nuôi dưỡng lòng kiên trì và lập kế hoạch sự nghiệp chiến lược trong một kỷ nguyên công nghệ biến đổi không ngừng.
 
 ### Bài học rút ra
 
-Tôi nhận ra rằng quyết định lựa chọn giữa máy ảo và container phụ thuộc rất lớn vào yêu cầu của hệ thống về mức độ cách ly tài nguyên hay khả năng mở rộng linh hoạt. Docker mang lại không gian tối ưu tuyệt vời vô cùng lý tưởng cho kiến trúc microservices. Bổ sung vào đó, sự kiện minh chứng rõ nét rằng sức mạnh của AWS không chỉ giới hạn ở các website thông thường mà còn hỗ trợ hạ tầng máy chủ vô cùng mạnh mẽ cho lĩnh vực công nghiệp game thời gian thực.
+Tôi đã lĩnh hội được một hệ tư duy đa chiều về cách thức các phân nhánh công nghệ hoàn toàn khác biệt có thể giao thoa để kiến tạo nên những giải pháp phần mềm cấp độ doanh nghiệp. Những quy chuẩn về Docker đã củng cố đáng kể phương pháp tiếp cận của tôi trong việc xây dựng các vi dịch vụ di động, trong khi các mô hình an ninh mạng tiên tiến sử dụng AWS WAF và học máy đã nhấn mạnh tính bắt buộc của việc tích hợp cơ chế phòng ngự chủ động trực tiếp vào các đường ống triển khai phần mềm. Cùng với đó, việc nghiên cứu về GraphRAG đã mở rộng tầm nhìn của tôi về cách thức tích hợp dữ liệu có cấu trúc nhằm vượt qua các giới hạn cố hữu của trí tuệ nhân tạo tạo sinh, biến chúng trở nên đáng tin cậy hơn rất nhiều trong môi trường sản xuất thực tế.
 
 ### Trải nghiệm sự kiện
 
-Việc tham gia sự kiện này mang lại cho tôi những trải nghiệm vô cùng quý giá và mở mang tư duy hệ thống. Việc được lắng nghe diễn giả Hùng Gia bóc tách những khái niệm ảo hóa phức tạp thành các ví dụ gần gũi đã giúp tôi định hình rõ ràng chiến lược triển khai dự án thực tế. Các quan sát về hạ tầng game server trực tiếp làm cho những lý thuyết đám mây trở nên cực kỳ sống động và truyền cảm hứng. Đây thực sự là bước đệm tuyệt vời để tôi mạnh dạn đưa những công nghệ container này vào thẳng hệ thống thực tập của mình.
+Việc tham gia vào một sự kiện công nghệ quy tụ vô số các chủ đề đa dạng như thế này thực sự là một trải nghiệm vô giá giúp định hình lại toàn bộ nhãn quan kỹ thuật của tôi. Cơ hội được tiếp thu những nền tảng tri thức đặc thù trực tiếp từ những chuyên gia thực chiến đã giúp tôi kết nối thành công những lý thuyết điện toán đám mây trừu tượng với các minh chứng ứng dụng hiện hữu trong ngành. Việc thấu hiểu tường tận các kỹ thuật đằng sau trò chơi trực tuyến, kiến trúc trí tuệ nhân tạo và hệ thống phòng thủ đám mây chủ động đã thực sự khơi dậy mạnh mẽ tham vọng kỹ thuật của tôi. Hơn thế nữa, câu chuyện thăng tiến sự nghiệp chân thực đã tiếp đất những khát vọng nghề nghiệp của bản thân, minh chứng rõ ràng rằng tinh thần học hỏi trọn đời và sự thích nghi nhạy bén với các phương pháp luận mới chính là những chiếc chìa khóa tối thượng để làm chủ hệ sinh thái kỹ thuật phần mềm đầy phức tạp và thay đổi từng ngày.
 
 ### Hình ảnh sự kiện
 
-![Bản đồ công cụ AWS DevOps](../../images/4-EventParticipated/event_1.jpg)
+![AWS DevOps Tool Landscape](../../images/4-EventParticipated/event_1.jpg)

@@ -5,13 +5,10 @@ weight = 1
 chapter = false
 +++
 
-**Event Name:** AWS Serverless Architecture Deep Dive  
+**Event Name:** GenAI-powered App-DB Modernization workshop  
 
-**Date & Time:** 14:00, June 20, 2026  
+**Date & Time:** 09:00, August 13, 2025  
 
-**Location:** Online (AWS Study Group Vietnam Webinar)  
+**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
 **Role:** Attendee  
-
-**Summary:**  
-Joined a dedicated session exploring modern serverless paradigms on AWS, focusing on Lambda, API Gateway, and DynamoDB. We covered cost optimization patterns, cold start handling, and event-driven architectures which directly influenced my CI/CD deployment strategies for this internship.

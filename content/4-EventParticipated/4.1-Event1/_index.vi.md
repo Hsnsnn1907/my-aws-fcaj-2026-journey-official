@@ -5,13 +5,10 @@ weight = 1
 chapter = false
 +++
 
-**Tên sự kiện:** AWS Serverless Architecture Deep Dive  
+**Tên sự kiện:** GenAI-powered App-DB Modernization workshop  
 
-**Thời gian:** 14:00, 20 tháng 6, 2026  
+**Thời gian:** 09:00, 13 tháng 8, 2025  
 
-**Địa điểm:** Online (AWS Study Group Vietnam Webinar)  
+**Địa điểm:** Tầng 26, Tháp Bitexco, 02 Đường Hải Triều, Phường Bến Nghé, TP. Hồ Chí Minh  
 
 **Vai trò:** Người tham dự  
-
-**Tóm tắt:**  
-Tham gia phiên chuyên sâu về mô hình serverless hiện đại trên AWS, tập trung vào Lambda, API Gateway và DynamoDB. Chúng tôi đã tìm hiểu các chiến lược tối ưu chi phí, xử lý cold start và kiến trúc hướng sự kiện, qua đó trực tiếp ảnh hưởng đến các chiến lược CI/CD của tôi trong kỳ thực tập này.

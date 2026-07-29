@@ -5,7 +5,7 @@ weight = 4
 chapter = false
 +++
 
-Trong quá trình thực tập, tôi đã tham gia hai sự kiện. Mỗi sự kiện đều là một trải nghiệm đáng nhớ mang lại những kiến thức mới, thú vị và bổ ích, cùng những món quà và khoảnh khắc tuyệt vời.
+Trong quá trình thực tập, tôi đã tham gia ba sự kiện. Mỗi sự kiện đều là một trải nghiệm đáng nhớ mang lại những kiến thức mới, thú vị và bổ ích, cùng những món quà và khoảnh khắc tuyệt vời.
 
 ## Sự kiện 1
 
@@ -28,3 +28,15 @@ Trong quá trình thực tập, tôi đã tham gia hai sự kiện. Mỗi sự k
 **Địa điểm:** Tầng 26, Tháp Bitexco, 02 Đường Hải Triều, Phường Bến Nghé, TP. Hồ Chí Minh  
 
 **Vai trò:** Người tham dự  
+
+---
+
+## Sự kiện 3
+
+**Tên sự kiện:** AWS Community Day Vietnam 2026  
+
+**Thời gian:** 08:00, 18 tháng 7, 2026  
+
+**Địa điểm:** Trung tâm Hội nghị Grand Palace, 142/18 Đường Cộng Hòa, Phường 4, Quận Tân Bình, TP. Hồ Chí Minh  
+
+**Vai trò:** Diễn giả  

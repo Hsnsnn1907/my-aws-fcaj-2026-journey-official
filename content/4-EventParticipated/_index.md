@@ -1,18 +1,8 @@
 +++
 title = "Events Participated"
-date = 2026-07-15
+date = 2026-07-29
 weight = 4
 chapter = false
-+++## Key events
++++
 
-1. FCAJ orientation and internship onboarding
-2. Weekly mentor code-review sessions
-3. Mid-cycle architecture review for CI/CD migration
-4. Final internship presentation and technical sharing
-
-## Outcomes
-
-- Aligned project scope with mentor expectations
-- Received architecture and security feedback before deployment
-- Delivered final report with production-like CI/CD evidence
-
+During my internship, I participated in several events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.

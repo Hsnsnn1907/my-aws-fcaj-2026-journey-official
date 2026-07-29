@@ -14,27 +14,74 @@ Location: Offline
 Role: Attendee
 
 ### Event Objectives
-
-The primary goal of this event was to deliver a highly diversified perspective on the modern technological ecosystem, combining deep cloud infrastructure concepts with cutting-edge software development frameworks. It aimed to establish a comprehensive learning environment where attendees could absorb practical engineering methodologies spanning from foundational containerization to advanced artificial intelligence applications, real-time gaming architectures, robust cybersecurity mechanisms, and realistic career progression roadmaps within the IT industry.
+- Share fundamental knowledge on cloud deployments and containerization
+- Provide guidance on cloud security and intrusion detection
+- Introduce real-time networking architecture for gaming
+- Present advanced AI integration frameworks like GraphRAG
+- Share pragmatic career development paths in IT
 
 ### Speakers
-
-The session featured an exceptional lineup of industry professionals who presented their specialized domains. The distinguished speakers included Bao Huynh, who discussed Docker methodologies; Le Hoang Gia Dai, who focused on cloud security; Nguyen Quoc Bao, who demonstrated game networking; Viet Phat, who introduced advanced AI concepts; Truong Phuoc, who presented technical tooling; and Vinh Tran, who shared his personal career development journey.
+- Bảo Huỳnh – Docker in AWS
+- Lê Hoàng Gia Đại – AWS WAF & ML NIDS
+- Nguyễn Quốc Bảo – Godot WebSocket
+- Việt Phát – GraphRAG on AWS
+- Trương Phước – Technical Operations
+- Vinh Trần – From IT Helpdesk to Senior Sysadmin
 
 ### Key Highlights
+**Containerization & Operations**
+- Virtual Machines vs. Docker: Understanding resource efficiency and lightweight packaging.
+- Streamlining deployment workflows independent of host hardware constraints.
 
-The technical presentations covered a broad spectrum of critical engineering disciplines. Bao Huynh initiated the technical deep dive by breaking down fundamental Docker containerization strategies, illustrating how to efficiently package and deploy applications independently of host environments. Following this, Le Hoang Gia Dai shifted the focus toward cybersecurity, delivering a profound analysis of protecting web ecosystems utilizing AWS Web Application Firewalls combined with Machine Learning-based Network Intrusion Detection Systems to proactively thwart malicious traffic. Shifting toward interactive media, Nguyen Quoc Bao captivated the audience with a demonstration on integrating WebSockets within the Godot engine to sustain ultra-low latency communication for real-time multiplayer gaming architectures. 
+**Cloud Security**
+- Utilizing AWS Web Application Firewalls (WAF) to protect web ecosystems.
+- Implementing Machine Learning Network Intrusion Detection Systems (ML NIDS) to thwart malicious traffic proactively.
 
-Furthermore, the event delved into the frontiers of Artificial Intelligence as Viet Phat explored Graph Retrieval-Augmented Generation (GraphRAG), detailing how knowledge graphs can radically enhance the accuracy and contextual awareness of large language models. Adding to the technical diversity, Truong Phuoc provided insights into specialized system operational tools to streamline deployment tasks. Beyond the pure architectural and software discussions, Vinh Tran provided a highly inspiring narrative detailing his professional evolution from an IT Helpdesk role to a Senior Systems Administrator, offering pragmatic advice on skill acquisition, resilience, and strategic career planning in a rapidly shifting technological landscape.
+**Real-Time Gaming Architectures**
+- Integrating WebSockets within the Godot engine.
+- Sustaining ultra-low latency communication for multiplayer scaling.
+
+**Advanced Artificial Intelligence**
+- Introduction to Graph Retrieval-Augmented Generation (GraphRAG).
+- Enhancing LLM accuracy and contextual awareness using knowledge graphs.
+
+**Career Development**
+- The journey from IT Helpdesk to Senior Systems Administrator.
+- Strategic skill acquisition, resilience, and navigating a rapidly shifting technological landscape.
 
 ### Key Takeaways
+**Design Mindset**
+- Security-first approach: Integrate defense mechanisms directly into the deployment pipeline.
+- Continuous learning: Adaptability is the ultimate key to mastering the software ecosystem.
 
-I assimilated a multi-dimensional understanding of how disparate technological domains intersect to form modern enterprise solutions. The insights into Docker containerization reinforced my approach to building portable microservices, while the advanced cybersecurity models utilizing AWS WAF and machine learning underscored the absolute necessity of integrating active defense mechanisms directly into deployment pipelines. Additionally, learning about GraphRAG expanded my perspective on how structured data integration can overcome the inherent limitations of generative AI models, making them immensely more reliable for enterprise usage. 
+**Technical Architecture**
+- Use Docker for portable, isolated microservices.
+- Combine traditional LLMs with knowledge graphs to overcome hallucination limits.
+
+**Applying to Work**
+- Implement AWS WAF and ML NIDS for external-facing endpoints.
+- Apply WebSocket architectures for projects requiring real-time, bi-directional communication.
 
 ### Event Experience
+Attending this multi-topic technological gathering was a profoundly enriching experience that significantly broadened my engineering horizons. Key experiences included:
 
-Participating in this multi-topic technological gathering was a profoundly enriching experience that significantly broadened my engineering horizons. The opportunity to absorb highly specialized knowledge directly from seasoned practitioners allowed me to bridge the gap between theoretical cloud concepts and their tangible industry applications. Understanding the intricate methodologies behind game networking, AI-driven architectures, and proactive cloud defense systems profoundly inspired my technical ambitions. Furthermore, the authentic career development stories grounded my professional aspirations, proving that continuous learning and methodological adaptation are the ultimate keys to navigating the complex and ever-evolving software engineering ecosystem.
+**Learning from highly skilled speakers**
+- Exposed to a diverse lineup of practitioners bridging the gap between theoretical concepts and tangible industry applications.
+- Gained actionable advice on career growth and transition strategies from senior professionals.
+
+**Hands-on technical exposure**
+- Visualized the intricate methodologies behind game networking and low-latency deployments.
+- Explored proactive cloud defense architectures utilizing Machine Learning.
+
+**Leveraging modern tools**
+- Understood the practical implementations of GraphRAG to elevate generative AI solutions.
+- Learned efficient containerization techniques using Docker.
+
+**Lessons learned**
+- Multi-dimensional technical knowledge (operations, security, AI, networking) is crucial for building modern enterprise solutions.
+- Career milestones require both continuous upskilling and strategic planning.
 
 ### Some event photos
-
 ![AWS DevOps Tool Landscape](../../images/4-EventParticipated/event_1.jpg)
+
+Overall, the event not only provided deep specialized technical knowledge but also grounded my professional aspirations through authentic career stories.

@@ -14,27 +14,74 @@ Thời gian: 09:00, 6 tháng 6, 2026
 Vai trò: Người tham dự
 
 ### Mục tiêu sự kiện
-
-Mục tiêu cốt lõi của sự kiện là mang đến một góc nhìn đa chiều về hệ sinh thái công nghệ hiện đại, kết hợp chặt chẽ giữa các nền tảng hạ tầng đám mây sâu rộng và những bộ công cụ phát triển phần mềm tiên tiến nhất. Chương trình hướng tới việc kiến tạo một không gian học thuật toàn diện, nơi người tham dự có thể tiếp thu các phương pháp luận kỹ thuật thực tiễn trải dài từ nền tảng đóng gói ứng dụng, kiến trúc trí tuệ nhân tạo bậc cao, mạng lưới giao tiếp trò chơi thời gian thực, cơ chế bảo mật không gian mạng kiên cố, cho đến lộ trình thăng tiến sự nghiệp thực tế trong ngành công nghệ thông tin.
+- Chia sẻ kiến thức nền tảng về triển khai cloud và container hóa
+- Hướng dẫn các giải pháp bảo mật đám mây và phát hiện xâm nhập
+- Giới thiệu kiến trúc mạng thời gian thực cho quy trình xử lý game
+- Khám phá các khung tích hợp Trí tuệ nhân tạo tiên tiến như GraphRAG
+- Chia sẻ lộ trình phát triển sự nghiệp thực tế trong ngành IT
 
 ### Diễn giả
-
-Sự kiện quy tụ một đội ngũ chuyên gia xuất sắc đến từ nhiều lĩnh vực chuyên biệt khác nhau. Các diễn giả vinh dự góp mặt bao gồm anh Bảo Huỳnh với chủ đề về Docker, anh Lê Hoàng Gia Đại trình bày về bảo mật đám mây, anh Nguyễn Quốc Bảo chia sẻ về lập trình mạng trong trò chơi tương tác, anh Việt Phát giới thiệu các khái niệm AI tiên tiến, anh Trương Phước với công cụ kỹ thuật chuyên sâu, và anh Vinh Trần cùng câu chuyện phát triển sự nghiệp cá nhân đầy cảm hứng.
+- Bảo Huỳnh – Docker in AWS
+- Lê Hoàng Gia Đại – AWS WAF & ML NIDS
+- Nguyễn Quốc Bảo – Godot WebSocket
+- Việt Phát – GraphRAG on AWS
+- Trương Phước – Technical Operations
+- Vinh Trần – Từ IT Helpdesk bước lên Senior Sysadmin
 
 ### Điểm nhấn nổi bật
+**Kiến trúc Container & Vận hành**
+- Phân tích Máy ảo (Virtual Machines) và Docker: Hiểu rõ sự tối ưu tài nguyên và đóng gói gọn nhẹ.
+- Tối giản hóa quy trình triển khai độc lập hoàn toàn với thông số phần cứng của máy chủ.
 
-Các bài thuyết trình kỹ thuật đã bao quát một phổ kiến thức vô cùng rộng lớn. Anh Bảo Huỳnh mở đầu phần phân tích chuyên sâu bằng việc mổ xẻ các chiến lược đóng gói ứng dụng thông qua Docker, minh họa cách thức triển khai phần mềm độc lập hoàn toàn với môi trường máy chủ vật lý. Ngay sau đó, anh Lê Hoàng Gia Đại dịch chuyển trọng tâm sang lĩnh vực an toàn thông tin, mang đến một góc nhìn sâu sắc về việc bảo vệ hệ thống web thông qua Tường lửa Ứng dụng Web của AWS (AWS WAF) kết hợp cùng Hệ thống Phát hiện Xâm nhập Mạng dựa trên Học máy (ML NIDS) nhằm chủ động ngăn chặn các luồng dữ liệu độc hại. Hướng đến lĩnh vực truyền thông tương tác, anh Nguyễn Quốc Bảo đã thu hút khán giả bằng phần trình diễn tích hợp WebSocket bên trong công cụ Godot để duy trì kết nối luân chuyển với độ trễ cực thấp cho các kiến trúc game nhập vai nhiều người chơi.
+**Bảo mật đám mây**
+- Tận dụng Tường lửa ứng dụng Web AWS (AWS WAF) để bảo vệ hệ sinh thái website.
+- Triển khai Hệ thống Phát hiện xâm nhập Mạng bằng Machine Learning (ML NIDS) để chủ động ngăn chặn lưu lượng độc hại.
 
-Thêm vào đó, sự kiện còn tiến sâu vào ranh giới của Trí tuệ Nhân tạo khi anh Việt Phát phân tích cấu trúc GraphRAG (Hệ thống Sinh văn bản Tăng cường Truy xuất dựa trên Đồ thị), giải thích tường tận cách các biểu đồ tri thức có thể nâng cấp vượt bậc độ chính xác và khả năng nhận thức ngữ cảnh của các mô hình ngôn ngữ lớn. Bổ sung cho sự đa dạng kỹ thuật, anh Trương Phước mang đến những góc nhìn mới mẻ về tối ưu hóa quy trình vận hành hệ thống phần mềm. Vượt ra ngoài những khía cạnh kiến trúc thuần túy, anh Vinh Trần đã chia sẻ một câu chuyện phát triển bản thân cực kỳ truyền cảm hứng về hành trình vươn lên từ vị trí IT Helpdesk đến vai trò Quản trị viên Hệ thống Cấp cao (Senior Sysadmin), qua đó đưa ra những lời khuyên thực tế về việc trau dồi kỹ năng, nuôi dưỡng lòng kiên trì và lập kế hoạch sự nghiệp chiến lược trong một kỷ nguyên công nghệ biến đổi không ngừng.
+**Kiến trúc Trò chơi Thời gian Thực**
+- Tích hợp WebSockets vào bên trong nền tảng Godot engine.
+- Duy trì giao tiếp với độ trễ siêu thấp để đảm bảo mở rộng cho số lượng lớn người chơi.
+
+**Trí tuệ nhân tạo bậc cao**
+- Giới thiệu khái niệm Graph Retrieval-Augmented Generation (GraphRAG).
+- Nâng cao độ chính xác và khả năng nhận diện ngữ cảnh của các LLM (Mô hình ngôn ngữ lớn) thông qua Đồ thị tri thức (Knowledge Graphs).
+
+**Phát triển Sự nghiệp**
+- Hành trình chuyển mình từ IT Helpdesk thành Senior Systems Administrator.
+- Định hình kỹ năng chiến lược, sức bật bền bỉ và cách lèo lái giữa kỷ nguyên công nghệ không ngừng biến đổi.
 
 ### Bài học rút ra
+**Tư duy thiết kế**
+- Ưu tiên bảo mật (Security-first): Tích hợp trực tiếp các cơ chế phòng ngự vào quy trình CI/CD.
+- Học tập trọn đời: Khả năng thích nghi là chìa khóa tối thượng để làm chủ thế giới phần mềm.
 
-Tôi đã lĩnh hội được một hệ tư duy đa chiều về cách thức các phân nhánh công nghệ hoàn toàn khác biệt có thể giao thoa để kiến tạo nên những giải pháp phần mềm cấp độ doanh nghiệp. Những quy chuẩn về Docker đã củng cố đáng kể phương pháp tiếp cận của tôi trong việc xây dựng các vi dịch vụ di động, trong khi các mô hình an ninh mạng tiên tiến sử dụng AWS WAF và học máy đã nhấn mạnh tính bắt buộc của việc tích hợp cơ chế phòng ngự chủ động trực tiếp vào các đường ống triển khai phần mềm. Cùng với đó, việc nghiên cứu về GraphRAG đã mở rộng tầm nhìn của tôi về cách thức tích hợp dữ liệu có cấu trúc nhằm vượt qua các giới hạn cố hữu của trí tuệ nhân tạo tạo sinh, biến chúng trở nên đáng tin cậy hơn rất nhiều trong môi trường sản xuất thực tế.
+**Kiến trúc hệ thống**
+- Áp dụng Docker cho kiến trúc microservices cách ly và di động.
+- Liên kết các LLM với Knowledge Graphs để đột phá giới hạn ảo giác AI (hallucination).
+
+**Ứng dụng vào công việc**
+- Tích hợp cấu trúc AWS WAF và ML NIDS trực tiếp cho các endpoint giao tiếp với người ngoài.
+- Tiến hành thực thi hệ thống WebSocket cho các ứng dụng đòi hỏi quy trình gọi API hai chiều siêu tốc.
 
 ### Trải nghiệm sự kiện
+Việc tham gia vào một sự kiện công nghệ bao quát vô số khía cạnh đặc thù này là trải nghiệm làm giàu tư duy quý báu giúp mở mang mạnh mẽ tầm nhìn kỹ sư của tôi. Các trải nghiệm cốt lõi bao gồm:
 
-Việc tham gia vào một sự kiện công nghệ quy tụ vô số các chủ đề đa dạng như thế này thực sự là một trải nghiệm vô giá giúp định hình lại toàn bộ nhãn quan kỹ thuật của tôi. Cơ hội được tiếp thu những nền tảng tri thức đặc thù trực tiếp từ những chuyên gia thực chiến đã giúp tôi kết nối thành công những lý thuyết điện toán đám mây trừu tượng với các minh chứng ứng dụng hiện hữu trong ngành. Việc thấu hiểu tường tận các kỹ thuật đằng sau trò chơi trực tuyến, kiến trúc trí tuệ nhân tạo và hệ thống phòng thủ đám mây chủ động đã thực sự khơi dậy mạnh mẽ tham vọng kỹ thuật của tôi. Hơn thế nữa, câu chuyện thăng tiến sự nghiệp chân thực đã tiếp đất những khát vọng nghề nghiệp của bản thân, minh chứng rõ ràng rằng tinh thần học hỏi trọn đời và sự thích nghi nhạy bén với các phương pháp luận mới chính là những chiếc chìa khóa tối thượng để làm chủ hệ sinh thái kỹ thuật phần mềm đầy phức tạp và thay đổi từng ngày.
+**Học hỏi từ các chuyên gia lão luyện**
+- Được tiếp xúc với lực lượng chuyên gia đình đám am hiểu sâu sắc cách kết nối kỹ thuật học thuật với ngành công nghiệp thực thụ.
+- Nhận được vô vàn lời khuyên khả thi nhằm thăng tiến chức vụ cũng như chiến lược thay đổi vị thế công việc từ các bậc tiền bối.
+
+**Tiếp cận trải nghiệm thực chiến**
+- Nắm bắt trực quan các phương thức lập trình hệ thống máy chủ trò chơi phân tán và hạ tầng độ trễ thấp.
+- Thu thập và phân tích trực tiếp cấu trúc an ninh bảo mật đám mây bằng Học máy (Machine Learning).
+
+**Tận dụng công cụ hiện đại**
+- Hiểu được các bước áp dụng GraphRAG hoàn chỉnh nhằm kích hoạt cỗ máy AI tạo sinh một cách chân thực nhất.
+- Nắm rõ cách điều phối kỹ thuật đóng gói linh hoạt sử dụng cơ chế Docker.
+
+**Bài học kinh nghiệm**
+- Kiến thức đa mảng (vận hành, bảo mật, AI, lập trình mạng) chính là chìa khóa xây dựng các hệ sinh thái doanh nghiệp khổng lồ.
+- Các cột mốc sự nghiệp đòi hỏi phải luôn tự nâng cấp kỹ năng lẫn vạch ra lộ trình chiến lược rõ ràng.
 
 ### Hình ảnh sự kiện
+![Biểu đồ Công cụ AWS DevOps](../../images/4-EventParticipated/event_1.jpg)
 
-![AWS DevOps Tool Landscape](../../images/4-EventParticipated/event_1.jpg)
+Nhìn chung, sự kiện không những cấp tốc bồi đắp kiến thức chuyên ngành chuyên sâu mà còn đóng vai trò neo giữ vững chắc hy vọng phát triển lộ trình sự nghiệp vững bền của tôi thông qua những trải lòng vô cùng chân thực.

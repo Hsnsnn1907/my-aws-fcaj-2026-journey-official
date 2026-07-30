@@ -12,9 +12,7 @@ Workshop này mô tả quá trình chuyển từ deploy thủ công sang luồng
 
 ## 2) Tổng quan kiến trúc
 
-![Sơ đồ kiến trúc](../images/workshop/architecture-overview.svg)
-
-![Sơ đồ CI/CD](../images/workshop/cicd-flow.svg)
+![Sơ đồ kiến trúc AWS VideoPlatform](/images/5-Workshop/architecture_diagram.png)
 
 ### Các dịch vụ AWS chính
 

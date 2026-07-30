@@ -12,9 +12,7 @@ This workshop documents how the project moved from manual deployment to an AWS-n
 
 ## 2) Architecture overview
 
-![Architecture overview](../images/workshop/architecture-overview.svg)
-
-![CI/CD flow](../images/workshop/cicd-flow.svg)
+![VideoPlayer AWS Architecture](../../images/5-Workshop/architecture-diagram.png)
 
 ### Core AWS services used
 

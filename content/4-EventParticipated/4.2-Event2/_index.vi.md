@@ -79,4 +79,8 @@ Việc tham gia buổi Workshop GenAI-powered App-DB Modernization mang lại gi
 ### Hình ảnh sự kiện
 ![AWS GenAI-powered App-DB Modernization](../../images/4-EventParticipated/event_2.jpeg)
 
+![Xác nhận tham gia Sự kiện 2](/my-aws-fcaj-2026-journey-official/images/4-EventParticipated/confirm_event2.png)
+
+**Minh chứng đã tham gia** — Ghi nhận và xác minh điểm danh trong hệ thống cổng FCAJ.
+
 Nhìn chung, buổi giao lưu đã kết nối thành công giữa kiến thức cơ sở dữ liệu chuyên sâu và các mô hình AI hiện đại, vạch ra lộ trình rõ ràng cho tôi trong việc xây dựng các dự án đám mây có tính mở rộng cao.

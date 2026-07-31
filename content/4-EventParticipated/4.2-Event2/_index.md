@@ -79,4 +79,8 @@ Attending the GenAI-powered App-DB Modernization meetup was extremely valuable, 
 ### Some event photos
 ![AWS GenAI-powered App-DB Modernization](../../images/4-EventParticipated/event_2.jpeg)
 
+![Event 2 Participation Confirmation](/my-aws-fcaj-2026-journey-official/images/4-EventParticipated/confirm_event2.png)
+
+**Proof of participation** — Attendance recorded and verified in the FCAJ portal system.
+
 Overall, the meetup successfully bridged database concepts and modern AI paradigms, providing a clear roadmap to build scalable cloud projects.

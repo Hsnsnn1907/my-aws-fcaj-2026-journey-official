@@ -84,4 +84,8 @@ Việc tham gia vào một sự kiện công nghệ bao quát vô số khía c�
 ### Hình ảnh sự kiện
 ![Biểu đồ Công cụ AWS DevOps](../../images/4-EventParticipated/event_1.jpg)
 
+![Xác nhận tham gia Sự kiện 1](/my-aws-fcaj-2026-journey-official/images/4-EventParticipated/confirm_event1.png)
+
+**Minh chứng đã tham gia** — Ghi nhận và xác minh điểm danh trong hệ thống cổng FCAJ.
+
 Nhìn chung, sự kiện không những cấp tốc bồi đắp kiến thức chuyên ngành chuyên sâu mà còn đóng vai trò neo giữ vững chắc hy vọng phát triển lộ trình sự nghiệp vững bền của tôi thông qua những trải lòng vô cùng chân thực.

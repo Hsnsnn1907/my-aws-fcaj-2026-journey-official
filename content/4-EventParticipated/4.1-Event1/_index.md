@@ -84,4 +84,8 @@ Attending this multi-topic technological gathering was a profoundly enriching ex
 ### Some event photos
 ![AWS DevOps Tool Landscape](../../images/4-EventParticipated/event_1.jpg)
 
+![Event 1 Participation Confirmation](/my-aws-fcaj-2026-journey-official/images/4-EventParticipated/confirm_event1.png)
+
+**Proof of participation** — Attendance recorded and verified in the FCAJ portal system.
+
 Overall, the event not only provided deep specialized technical knowledge but also grounded my professional aspirations through authentic career stories.

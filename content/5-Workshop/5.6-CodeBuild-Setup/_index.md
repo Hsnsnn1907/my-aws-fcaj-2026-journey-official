@@ -1,5 +1,5 @@
 +++
-title = "CodeBuild Setup"
+title = "5.6. CodeBuild Setup"
 date = 2026-08-03
 weight = 6
 chapter = false

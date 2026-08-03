@@ -1,5 +1,5 @@
 +++
-title = "Worklog"
+title = "1. Worklog"
 date = 2026-06-25
 weight = 1
 chapter = false

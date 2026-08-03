@@ -1,5 +1,5 @@
 +++
-title = "AWS Services Configuration"
+title = "5.4. AWS Services Configuration"
 date = 2026-08-03
 weight = 4
 chapter = false

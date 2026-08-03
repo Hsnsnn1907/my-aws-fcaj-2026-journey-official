@@ -1,5 +1,5 @@
 +++
-title = "Chia sẻ và phản hồi"
+title = "7. Chia sẻ và phản hồi"
 date = 2026-07-27
 weight = 7
 chapter = false

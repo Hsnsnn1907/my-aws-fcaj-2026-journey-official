@@ -1,5 +1,5 @@
 +++
-title = "Cấu hình Dịch vụ AWS"
+title = "5.4. Cấu hình Dịch vụ AWS"
 date = 2026-08-03
 weight = 4
 chapter = false

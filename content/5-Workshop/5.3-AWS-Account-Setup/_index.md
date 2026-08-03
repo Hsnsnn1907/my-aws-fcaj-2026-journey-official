@@ -1,5 +1,5 @@
 +++
-title = "AWS Account Setup"
+title = "5.3. AWS Account Setup"
 date = 2026-08-03
 weight = 3
 chapter = false

@@ -1,5 +1,5 @@
 +++
-title = "Yêu cầu trước khi bắt đầu"
+title = "5.2. Yêu cầu trước khi bắt đầu"
 date = 2026-08-03
 weight = 2
 chapter = false

@@ -1,5 +1,5 @@
 +++
-title = "Đề xuất dự án"
+title = "2. Đề xuất dự án"
 date = 2026-06-26
 weight = 2
 chapter = false

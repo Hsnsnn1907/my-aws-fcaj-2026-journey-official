@@ -1,5 +1,5 @@
 +++
-title = "Thiết lập Tài khoản AWS"
+title = "5.3. Thiết lập Tài khoản AWS"
 date = 2026-08-03
 weight = 3
 chapter = false

@@ -1,5 +1,5 @@
 +++
-title = "Sự kiện 4"
+title = "4.4. Sự kiện 4"
 date = 2026-08-01
 weight = 4
 chapter = false

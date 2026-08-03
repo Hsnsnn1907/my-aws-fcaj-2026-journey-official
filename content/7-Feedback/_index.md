@@ -1,5 +1,5 @@
 +++
-title = "Sharing and Feedback"
+title = "7. Sharing and Feedback"
 date = 2026-07-27
 weight = 7
 chapter = false

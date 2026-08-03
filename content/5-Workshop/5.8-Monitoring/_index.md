@@ -1,5 +1,5 @@
 +++
-title = "Monitoring"
+title = "5.8. Monitoring"
 date = 2026-08-03
 weight = 8
 chapter = false

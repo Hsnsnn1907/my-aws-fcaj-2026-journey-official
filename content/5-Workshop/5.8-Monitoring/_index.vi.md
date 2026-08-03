@@ -1,5 +1,5 @@
 +++
-title = "Giám sát"
+title = "5.8. Giám sát"
 date = 2026-08-03
 weight = 8
 chapter = false

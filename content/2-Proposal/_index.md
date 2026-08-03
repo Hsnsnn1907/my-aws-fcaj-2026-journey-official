@@ -1,5 +1,5 @@
 +++
-title = "Project Proposal"
+title = "2. Project Proposal"
 date = 2026-06-26
 weight = 2
 chapter = false

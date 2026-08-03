@@ -5,25 +5,18 @@ weight = 1
 chapter = false
 +++
 
-**Họ và tên:** Hồ Bá Khang
+## Student Information:
 
-**Số điện thoại:** 0985009995
-
-**Email:** [hobakhang05@gmail.com](mailto:hobakhang05@gmail.com)
-
-**MSSV:** 2352467
-
-**Trường:** Ho Chi Minh City University of Technology
-
-**Chuyên ngành:** Computer Science
-
-**Lớp:** CN23KHM1
-
-**Công ty thực tập:** Amazon Web Services Viet Nam Company Limited
-
-**Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
-
-**Thời gian thực tập:** Từ 15/06/2026 đến 14/08/2026
+Họ và tên: Hồ Bá Khang
+Số điện thoại: 0985009995
+Email: hobakhang05@gmail.com
+MSSV: 2352467
+Trường: Ho Chi Minh City University of Technology
+Chuyên ngành: Computer Science
+Lớp: CN23KHM1
+Công ty thực tập: Amazon Web Services Viet Nam Company Limited
+Vị trí thực tập: Workforce Bootcamp - First Cloud AI Journey
+Thời gian thực tập: Từ 15/06/2026 đến 14/08/2026
 
 ![Your profile picture](../images/avata.jpg)
 

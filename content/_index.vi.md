@@ -9,8 +9,6 @@ chapter = false
 
 ## Thông tin sinh viên:
 
-| Trường | Giá trị |
-|--------|---------|
 | Họ và tên | Hồ Bá Khang |
 | Số điện thoại | 0985009995 |
 | Email | hobakhang05@gmail.com |

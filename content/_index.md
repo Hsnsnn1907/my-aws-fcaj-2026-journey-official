@@ -9,8 +9,6 @@ chapter = false
 
 ## Student Information:
 
-| Field | Value |
-|-------|-------|
 | Full Name | Ho Ba Khang |
 | Phone Number | 0985009995 |
 | Email | hobakhang05@gmail.com |

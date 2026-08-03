@@ -5,78 +5,283 @@ weight = 4
 chapter = false
 +++
 
-## Cấu hình Dịch vụ AWS (Tuần 8)
+## Cấu hình Dịch vụ AWS (AWS Services Configuration - Tuần 8)
 
-Phần này bao gồm cấu hình các dịch vụ AWS: ECR repositories, Secrets Manager, S3 bucket và IAM roles.
+{{< notice warning >}}
+Lưu ý: Thông tin dưới đây chỉ mang tính tham khảo. Vui lòng không sao chép nguyên văn cho báo cáo của bạn, bao gồm cả cảnh báo này.
+{{< /notice >}}
 
-### Tạo ECR Repositories
+Phần này bao gồm cấu hình các dịch vụ AWS cốt lõi cần thiết cho CI/CD pipeline: ECR repositories, Secrets Manager, S3 bucket và IAM roles.
 
-Tạo hai private ECR repositories:
+### 3.1 Tạo ECR Repositories
+
+Tạo hai private ECR repositories cho container images:
 
 - `api-service` (NestJS GraphQL backend)
 - `search-service` (FastAPI vector search)
 
-#### Các bước tạo:
-1. Vào ECR Console → Create repository
-2. Tên: `api-service`, `search-service`
-3. Visibility: Private
-4. Bật Scan on push
-5. Ghi lại repository URIs
+![ECR Repository Creation](/my-aws-fcaj-2026-journey-official/images/5-Workshop/14_ecr_repository_creation.png)
+![ECR Repository Policy](/my-aws-fcaj-2026-journey-official/images/5-Workshop/13_ecr_repository_policy.png)
 
-### Cấu hình Secrets Manager
+#### Hướng dẫn từng bước thiết lập ECR (Step-by-Step ECR Setup)
 
-Lưu secrets cho cả hai services:
+1. **Điều hướng đến ECR Console** → Create repository
+2. **Repository 1**: `api-service`
+   - Name: `api-service`
+   - Visibility: Private
+   - Bật: Scan on push (để phát hiện lỗ hổng bảo mật)
+   - Bật: Tag immutability (tùy chọn, ngăn ghi đè tag)
+3. **Repository 2**: `search-service`
+   - Name: `search-service`
+   - Cùng cài đặt như trên
+4. **Ghi lại repository URIs**: 
+   - `772706200692.dkr.ecr.us-east-1.amazonaws.com/api-service`
+   - `772706200692.dkr.ecr.us-east-1.amazonaws.com/search-service`
+5. **Cấu hình repository policies** để cho phép CodeBuild push access
+
+#### ECR Repository Policy
+
+Cấu hình repository policy để cho phép CodeBuild service roles push images:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowCodeBuildPush",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::772706200692:role/codebuild-build-api-service-service-role",
+          "arn:aws:iam::772706200692:role/codebuild-build-search-service-service-role"
+        ]
+      },
+      "Action": [
+        "ecr:BatchCheckLayerAvailability",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:BatchGetImage",
+        "ecr:PutImage",
+        "ecr:InitiateLayerUpload",
+        "ecr:UploadLayerPart",
+        "ecr:CompleteLayerUpload"
+      ]
+    }
+  ]
+}
+```
+
+### 3.2 Cấu hình Secrets Manager
+
+Lưu trữ runtime secrets cho cả hai services trong AWS Secrets Manager:
 
 #### API Service Secrets
-Secret name: `prod/backend/api-service`
+
+![Secrets Manager - API Service](/my-aws-fcaj-2026-journey-official/images/5-Workshop/03_secrets_manager_api_service.png)
+
+**Secret name**: `prod/backend/api-service`
 ```json
 {
   "DATABASE_URL": "postgresql://postgres:postgres@postgres:5432/video_streaming_api?schema=public",
   "RABBITMQ_URL": "amqp://guest:guest@rabbitmq:5672",
   "REDIS_URL": "redis://redis:6379",
   "QDRANT_URL": "http://qdrant:6333",
-  "JWT_SECRET": "your-jwt-secret-key-here"
+  "JWT_SECRET": "your-jwt-secret-key-here",
+  "FIREBASE_PRIVATE_KEY": "-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgk...\\n-----END PRIVATE KEY-----",
+  "FIREBASE_CLIENT_EMAIL": "firebase-adminsdk@project.iam.gserviceaccount.com",
+  "AWS_ACCESS_KEY_ID": "",
+  "AWS_SECRET_ACCESS_KEY": "",
+  "AWS_REGION": "us-east-1",
+  "CLOUDINARY_CLOUD_NAME": "your-cloud-name",
+  "CLOUDINARY_API_KEY": "your-api-key",
+  "CLOUDINARY_API_SECRET": "your-api-secret"
 }
 ```
 
 #### Search Service Secrets
-Secret name: `prod/backend/search-service`
+
+![Secrets Manager - Search Service](/my-aws-fcaj-2026-journey-official/images/5-Workshop/04_secrets_manager_search_service.png)
+
+**Secret name**: `prod/backend/search-service`
 ```json
 {
   "DATABASE_URL": "postgresql://postgres:postgres@postgres:5432/video_streaming_search",
   "RABBITMQ_URL": "amqp://guest:guest@172.17.0.1:5672",
-  "REDIS_URL": "redis://redis:6379",
   "QDRANT_URL": "http://qdrant:6333",
+  "REDIS_URL": "redis://redis:6379",
   "OPENAI_API_KEY": "sk-...",
-  "GEMINI_API_KEY": "AIza..."
+  "GEMINI_API_KEY": "AIza...",
+  "AWS_ACCESS_KEY_ID": "",
+  "AWS_SECRET_ACCESS_KEY": "",
+  "AWS_REGION": "us-east-1"
 }
 ```
 
-### Tạo S3 Bucket cho Artifacts
+#### Lưu ý quan trọng cho Secrets Manager (Important Notes)
 
-Bucket name: `videoplatform-deploy-artifacts-dsk`
+1. **Ký tự xuống dòng**: Sử dụng `\\n` cho newline trong JSON values (bắt buộc cho private keys)
+2. **Encryption key**: Sử dụng `aws/secretsmanager` (default AWS-managed key)
+3. **Access control**: Secrets được truy cập qua IAM role trên EC2 - không có credentials trong code
+4. **Runtime fetching**: Secrets được lấy tại runtime trong quá trình deployment, không bake vào images
+5. **Rotation**: Bật automatic secret rotation cho bảo mật production
 
-**Mục đích:** Lưu trữ Docker Compose files cho EC2 deployment
-- Cấu trúc path: `s3://bucket/compose/docker-compose.{api,search}-service.yml`
-- Public access: **Block**
-- Encryption: SSE-S3
+#### Các bước tạo Secret (Secret Creation Steps)
 
-### Cấu hình IAM Roles
+1. Điều hướng đến Secrets Manager Console → Store a new secret
+2. Chọn "Other type of secret" → Plaintext
+3. Paste nội dung JSON cho service tương ứng
+4. **Secret name**: Sử dụng format `prod/backend/{service}-service`
+5. **Encryption key**: Default AWS-managed key
+6. **Cấu hình rotation**: Tùy chọn, nhưng khuyến nghị cho production
+7. **Review và store**: Lưu secret
 
-#### CodeBuild Service Roles (2 roles)
-- `codebuild-build-api-service-service-role`
-- `codebuild-build-search-service-service-role`
+### 3.3 Tạo S3 Bucket cho Artifacts
 
-**Policies:** `AmazonEC2ContainerRegistryPowerUser`, `AmazonS3FullAccess`, `AmazonSSMFullAccess`
+Tạo một S3 bucket để lưu trữ deployment artifacts (Docker Compose files):
 
-#### EC2 Instance Role
-- Role: `EC2-Backend-Role`
-- Policies: `AmazonSSMManagedInstanceCore`, `SecretsManagerReadWrite`, `AmazonS3ReadOnlyAccess`, `AmazonEC2ContainerRegistryReadOnly`
+**Bucket name**: `videoplatform-deploy-artifacts-dsk`
 
-### Xác minh EC2 Role
-```bash
-aws sts get-caller-identity
-# Expected: arn:aws:sts::772706200692:assumed-role/EC2-Backend-Role/i-...
+![S3 Deploy Artifacts Bucket](/my-aws-fcaj-2026-journey-official/images/5-Workshop/09_s3_deploy_artifacts_bucket.png)
+
+#### Cấu hình S3 Bucket (S3 Bucket Configuration)
+
+- **Bucket name**: `videoplatform-deploy-artifacts-dsk` (phải globally unique)
+- **Region**: us-east-1 (giống các dịch vụ khác)
+- **Public access**: **Block all public access** (truy cập qua IAM role only)
+- **Versioning**: Disabled (không cần cho compose files)
+- **Encryption**: SSE-S3 (AWS-managed encryption)
+- **Lifecycle rules**: Tùy chọn - xóa các file cũ hơn 30 ngày
+
+#### Cấu trúc Path (Path Structure)
+```
+s3://videoplatform-deploy-artifacts-dsk/
+├── compose/
+│   ├── docker-compose.api-service.yml
+│   └── docker-compose.search-service.yml
+└── backups/  # Tùy chọn, cho các file backup
 ```
 
-Với các dịch vụ AWS đã cấu hình, bạn sẵn sàng đi đến Dockerfiles và Scripts.
+#### Bucket Policy cho CodeBuild Access
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowCodeBuildSync",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::772706200692:role/codebuild-build-api-service-service-role",
+          "arn:aws:iam::772706200692:role/codebuild-build-search-service-service-role"
+        ]
+      },
+      "Action": [
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:DeleteObject",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::videoplatform-deploy-artifacts-dsk",
+        "arn:aws:s3:::videoplatform-deploy-artifacts-dsk/*"
+      ]
+    }
+  ]
+}
+```
+
+### 3.4 Cấu hình IAM Roles
+
+Tạo IAM roles với quyền least-privilege cho CodeBuild và EC2:
+
+#### CodeBuild Service Roles (2 roles)
+
+**Role 1**: `codebuild-build-api-service-service-role`
+
+![CodeBuild API Service Role](/my-aws-fcaj-2026-journey-official/images/5-Workshop/05_iam_codebuild_api_service_role.png)
+
+**Attached Policies:**
+- `AmazonEC2ContainerRegistryPowerUser` (push images lên ECR)
+- `AmazonS3FullAccess` (sync compose files lên S3)
+- `AmazonSSMFullAccess` (trigger EC2 deployment qua SSM)
+- `CodeBuildBasePolicy-build-api-service-*` (CloudWatch Logs, các quyền cơ bản)
+
+**Role 2**: `codebuild-build-search-service-service-role`
+
+![CodeBuild Search Service Role](/my-aws-fcaj-2026-journey-official/images/5-Workshop/06_iam_codebuild_search_service_role.png)
+
+**Attached Policies:** (giống như trên, nhưng cho search service)
+
+#### EC2 Instance Role
+
+**Role name**: `EC2-Backend-Role`
+
+**Attached Policies:**
+- `AmazonSSMManagedInstanceCore` (nhận SSM commands)
+- `SecretsManagerReadWrite` (fetch runtime secrets)
+- `AmazonS3ReadOnlyAccess` (download compose files)
+- `AmazonEC2ContainerRegistryReadOnly` (pull Docker images)
+
+#### Xác minh EC2 Role Attachment (Verify EC2 Role Attachment)
+
+```bash
+# Trên EC2 instance
+aws sts get-caller-identity
+# Expected output: arn:aws:sts::772706200692:assumed-role/EC2-Backend-Role/i-037a4cd636a68eb7e
+
+# Test permissions
+aws s3 ls s3://videoplatform-deploy-artifacts-dsk
+aws secretsmanager list-secrets --region us-east-1
+```
+
+### Các bước tạo IAM Role (IAM Role Creation Steps)
+
+1. **Điều hướng đến IAM Console** → Roles → Create role
+2. **Trusted entity type**: AWS service
+3. **Use case**: 
+   - Cho CodeBuild: `CodeBuild`
+   - Cho EC2: `EC2`
+4. **Attach policies**: Chọn các policies đã liệt kê ở trên
+5. **Role name**: Sử dụng các tên đã chỉ định
+6. **Review và create**: Hoàn tất tạo role
+
+### Best Practices Bảo mật (Security Best Practices)
+
+1. **Least privilege**: Chỉ cấp các quyền cần thiết
+2. **Role-based access**: Không hardcode credentials
+3. **Regular review**: Audit IAM policies hàng tháng
+4. **MFA enforcement**: Yêu cầu MFA cho IAM users
+5. **Access logging**: Bật CloudTrail cho API calls
+
+### Kiểm thử Cấu hình (Testing Configuration)
+
+Sau khi thiết lập tất cả các dịch vụ, kiểm thử cấu hình:
+
+```bash
+# Test ECR login (từ CodeBuild role context)
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 772706200692.dkr.ecr.us-east-1.amazonaws.com
+
+# Test S3 access
+aws s3 cp docker-compose.api-service.yml s3://videoplatform-deploy-artifacts-dsk/compose/
+
+# Test Secrets Manager access
+aws secretsmanager get-secret-value --secret-id prod/backend/api-service --query SecretString --output text
+```
+
+### Troubleshooting
+
+#### Issue: ECR Push Permission Denied
+**Solution**: Xác minh repository policy cho phép CodeBuild role, kiểm tra IAM permissions
+
+#### Issue: Secrets Manager Access Denied
+**Solution**: Đảm bảo EC2 role có policy `SecretsManagerReadWrite`
+
+#### Issue: S3 Access Denied
+**Solution**: Kiểm tra bucket policy và IAM role permissions
+
+#### Issue: SSM Commands Not Delivered
+**Solution**: Xác minh EC2 có policy `AmazonSSMManagedInstanceCore`
+
+### Next Steps
+
+Với các dịch vụ AWS đã được cấu hình, bạn đã sẵn sàng để tiếp tục đến phần Dockerfiles & Scripts, nơi bạn sẽ tạo code containerization và deployment automation.

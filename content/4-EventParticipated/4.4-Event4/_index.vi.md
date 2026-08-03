@@ -89,13 +89,13 @@ Khám phá Kiro, một môi trường phát triển AI-native biến đổi phá
 
 **Tiến độ Lab 2 Hoàn thành: Parts 1-2**
 
-✅ **Part 1: Agent Đầu tiên trong 3 Lệnh (20 phút)**
+**Part 1: Agent Đầu tiên trong 3 Lệnh (20 phút)**
 - Scaffold Strands agent mới với `agentcore create`
 - Test local với `agentcore dev`
 - Triển khai lên AgentCore Runtime với `agentcore deploy`
 - Gọi trên cloud với `agentcore invoke`
 
-✅ **Part 2: Xây dựng Returns & Refunds Agent (25 phút)**
+**Part 2: Xây dựng Returns & Refunds Agent (25 phút)**
 - Sử dụng Kiro để thêm system prompt theo domain
 - Tạo @tool decorated functions:
   - `order_lookup`: Truy xuất đơn hàng theo ID

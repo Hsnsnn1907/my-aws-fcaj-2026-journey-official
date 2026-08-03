@@ -9,38 +9,38 @@ chapter = false
 
 ### Quản lý Secrets
 
-- ✅ Không có secrets trong code hoặc env vars
-- ✅ Secrets lưu trong AWS Secrets Manager
-- ✅ Truy cập dựa trên IAM role (không có long-term credentials)
-- ✅ Secrets fetch tại runtime
-- ✅ Mã hóa dữ liệu (AWS-managed keys)
-- ✅ Rotation secrets (90 ngày)
+- Không có secrets trong code hoặc env vars
+- Secrets lưu trong AWS Secrets Manager
+- Truy cập dựa trên IAM role (không có long-term credentials)
+- Secrets fetch tại runtime
+- Mã hóa dữ liệu (AWS-managed keys)
+- Rotation secrets (90 ngày)
 
 ### Bảo mật mạng
 
-- ✅ EC2 trong default VPC
-- ✅ Security groups: tối thiểu port exposure
-- ✅ IMDSv2 bắt buộc
-- ✅ ECR private repositories
-- ✅ S3 bucket: block public access
-- ✅ SSH restricted đến IPs cụ thể
+- EC2 trong default VPC
+- Security groups: tối thiểu port exposure
+- IMDSv2 bắt buộc
+- ECR private repositories
+- S3 bucket: block public access
+- SSH restricted đến IPs cụ thể
 
 ### Bảo mật containers
 
-- ✅ Multi-stage builds (giảm surface attack)
-- ✅ Non-root user (tốt nhất có thể)
-- ✅ ECR image scanning enabled
-- ✅ Minimal base images (alpine, slim)
-- ✅ Không có credentials trong images
-- ✅ Quét vulnerability định kỳ
+- Multi-stage builds (giảm surface attack)
+- Non-root user (tốt nhất có thể)
+- ECR image scanning enabled
+- Minimal base images (alpine, slim)
+- Không có credentials trong images
+- Quét vulnerability định kỳ
 
 ### IAM Least Privilege
 
-- ✅ Roles riêng cho CodeBuild và EC2
-- ✅ Policies resource-specific (không dùng `*` wildcard)
-- ✅ Không có AWS access keys (chỉ IAM roles)
-- ✅ Review policies hàng tháng
-- ✅ MFA enabled cho tất cả IAM users
+- Roles riêng cho CodeBuild và EC2
+- Policies resource-specific (không dùng `*` wildcard)
+- Không có AWS access keys (chỉ IAM roles)
+- Review policies hàng tháng
+- MFA enabled cho tất cả IAM users
 
 ### Commands kiểm tra bảo mật
 

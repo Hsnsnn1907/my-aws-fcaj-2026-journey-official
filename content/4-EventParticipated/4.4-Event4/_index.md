@@ -89,13 +89,13 @@ Discover Kiro, an AI-native development environment that transforms software dev
 
 **Lab 2 Progress Completed: Parts 1-2**
 
-✅ **Part 1: Your First Agent in 3 Commands (20 min)**
+**Part 1: Your First Agent in 3 Commands (20 min)**
 - Scaffolded new Strands agent with `agentcore create`
 - Tested locally with `agentcore dev`
 - Deployed to AgentCore Runtime with `agentcore deploy`
 - Invoked in cloud with `agentcore invoke`
 
-✅ **Part 2: Build the Returns & Refunds Agent (25 min)**
+**Part 2: Build the Returns & Refunds Agent (25 min)**
 - Used Kiro to add domain-specific system prompt
 - Created @tool decorated functions:
   - `order_lookup`: Retrieve order by ID

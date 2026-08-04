@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#0f172a"/>
+  <text x="600" y="50" fill="#e2e8f0" font-size="28" text-anchor="middle" font-family="Arial">VideoPlatform AWS Architecture</text>
+  <rect x="60" y="120" width="220" height="100" fill="#1e293b" stroke="#38bdf8"/>
+  <text x="170" y="175" fill="#e2e8f0" text-anchor="middle" font-family="Arial">GitHub</text>
+  <rect x="340" y="120" width="220" height="100" fill="#1e293b" stroke="#22c55e"/>
+  <text x="450" y="175" fill="#e2e8f0" text-anchor="middle" font-family="Arial">CodeBuild</text>
+  <rect x="620" y="120" width="220" height="100" fill="#1e293b" stroke="#f59e0b"/>
+  <text x="730" y="175" fill="#e2e8f0" text-anchor="middle" font-family="Arial">ECR + S3</text>
+  <rect x="900" y="120" width="220" height="100" fill="#1e293b" stroke="#a78bfa"/>
+  <text x="1010" y="175" fill="#e2e8f0" text-anchor="middle" font-family="Arial">SSM</text>
+  <rect x="250" y="320" width="700" height="300" fill="#111827" stroke="#94a3b8"/>
+  <text x="600" y="360" fill="#e2e8f0" text-anchor="middle" font-family="Arial">EC2 Runtime Host</text>
+  <rect x="290" y="390" width="160" height="70" fill="#1f2937" stroke="#f97316"/>
+  <text x="370" y="432" fill="#e2e8f0" text-anchor="middle" font-family="Arial">api_service</text>
+  <rect x="490" y="390" width="160" height="70" fill="#1f2937" stroke="#06b6d4"/>
+  <text x="570" y="432" fill="#e2e8f0" text-anchor="middle" font-family="Arial">search_service</text>
+  <rect x="690" y="390" width="120" height="70" fill="#1f2937" stroke="#10b981"/>
+  <text x="750" y="432" fill="#e2e8f0" text-anchor="middle" font-family="Arial">Postgres</text>
+  <rect x="830" y="390" width="90" height="70" fill="#1f2937" stroke="#f43f5e"/>
+  <text x="875" y="432" fill="#e2e8f0" text-anchor="middle" font-family="Arial">Redis</text>
+  <rect x="290" y="500" width="130" height="70" fill="#1f2937" stroke="#eab308"/>
+  <text x="355" y="542" fill="#e2e8f0" text-anchor="middle" font-family="Arial">Qdrant</text>
+  <rect x="450" y="500" width="140" height="70" fill="#1f2937" stroke="#22d3ee"/>
+  <text x="520" y="542" fill="#e2e8f0" text-anchor="middle" font-family="Arial">RabbitMQ</text>
+  <rect x="620" y="500" width="150" height="70" fill="#1f2937" stroke="#818cf8"/>
+  <text x="695" y="542" fill="#e2e8f0" text-anchor="middle" font-family="Arial">CloudWatch</text>
+  <rect x="800" y="500" width="120" height="70" fill="#1f2937" stroke="#34d399"/>
+  <text x="860" y="542" fill="#e2e8f0" text-anchor="middle" font-family="Arial">Secrets</text>
+  <line x1="280" y1="170" x2="340" y2="170" stroke="#e2e8f0"/>
+  <line x1="560" y1="170" x2="620" y2="170" stroke="#e2e8f0"/>
+  <line x1="840" y1="170" x2="900" y2="170" stroke="#e2e8f0"/>
+  <line x1="1010" y1="220" x2="1010" y2="320" stroke="#e2e8f0"/>
+  <line x1="1010" y1="320" x2="600" y2="320" stroke="#e2e8f0"/>
+</svg>
